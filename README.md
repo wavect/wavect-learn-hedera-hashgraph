@@ -220,4 +220,5 @@ const tokenConfig: TokenConfig = {
 
     /** @ACT: Create new token */
     const token = await createToken(tokenConfig);
-});```
+});
+```
