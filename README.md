@@ -206,19 +206,18 @@ const txResult = await transfer(
 Create yourself a token, either `fungle` or `non-fungible`.
 
 ```typescript
-const tokenConfig: TokenConfig = {
-    account: {
-        id: TEST_ACCOUNT_ID,
-        privateKey: TEST_MY_PRIVATE_KEY
-    },
-    initialTokenSupply: 1_000_000,
-    tokenDecimals: "10",
-    tokenName: "Fungible Token",
-    tokenSymbol: "FUNGI",
-    type: TokenType.FungibleCommon
+    const tokenConfig: TokenConfig = {
+        account: {
+            id: TEST_ACCOUNT_ID,
+            privateKey: TEST_MY_PRIVATE_KEY
+        },
+        initialTokenSupply: 1_000_000,
+        tokenDecimals: "10",
+        tokenName: "Fungible Token",
+        tokenSymbol: "FUNGI",
+        type: TokenType.FungibleCommon
 }
 
-    /** @ACT: Create new token */
-    const token = await createToken(tokenConfig);
-});
+/** @ACT: Create new token */
+const token = await createToken(tokenConfig);
 ```
